@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="tomcat-el-api-8.5.47">
+    <CLASSES>
+      <root url="jar://C:/Java/tomcat-el-api-8.5.47.jar!/" />
+      <root url="jar://C:/Java/tomcat-jsp-api-8.5.47.jar!/" />
+      <root url="jar://C:/Java/tomcat-servlet-api-8.5.47.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,15 @@
+<Context>
+    <Resource
+            name="jdbc/postgres"
+            auth="Container"
+            type="javax.sql.DataSource"
+            driverClassName="org.postgresql.Driver"
+            url="jdbc:postgresql://localhost:5432/payment"
+            username="postgres"
+            password="570545"
+            maxActive="10"
+            maxIdle="4"
+            maxWait="-1"
+    />
+
+</Context>

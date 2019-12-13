@@ -9,7 +9,7 @@ public class User {
     private String email;
     private int roleId;
 
-    public User(int id, String firstName, String secondName, String login, String password, String email, int role) {
+    public User(int id, String firstName, String secondName, String login, String email, String password, int role) {
         this.id = id;
         this.firstName = firstName;
         this.secondName = secondName;
@@ -17,6 +17,14 @@ public class User {
         this.password = password;
         this.email = email;
         this.roleId = role;
+    }
+
+    public User(String firstName, String secondName, String login, String email, String password) {
+        this.firstName = firstName;
+        this.secondName = secondName;
+        this.login = login;
+        this.password = password;
+        this.email = email;
     }
 
     public int getId() {

@@ -14,6 +14,13 @@ public class Payment {
         this.name = name;
     }
 
+    public Payment(double amount, String number, String name) {
+        this.amount = amount;
+        this.number = number;
+        this.name = name;
+    }
+
+
     public int getId() {
         return id;
     }

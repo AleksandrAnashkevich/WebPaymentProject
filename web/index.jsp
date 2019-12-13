@@ -6,21 +6,22 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
 <html>
 <head>
-  <title>$Title$</title>
+  <meta charset="UTF-8">
+  <title>Simple Web Application</title>
 </head>
+
 <body>
-<div>
-  <h1>Super app!</h1>
-</div>
 
-<div>
-  <div>
+<h2>Simple Login Web Application using JSP/Servlet</h2>
 
-    <button onclick="location.href='/list'">List users</button>
-    <button onclick="location.href='/add'">Add user</button>
-  </div>
-</div>
+<ul>
+  <li><a href="home">Home</a></li>
+  <li><a href="login">Login</a></li>
+  <li><a href="productList">Product  List</a>
+</ul>
+
 </body>
 </html>

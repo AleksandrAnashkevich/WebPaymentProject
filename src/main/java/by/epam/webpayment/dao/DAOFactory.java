@@ -1,6 +1,7 @@
 package by.epam.webpayment.dao;
 
-import by.epam.webpayment.dao.impl.PaymentsDAOImpl;
+import by.epam.webpayment.dao.impl.CardsDAOImpl;
+import by.epam.webpayment.dao.impl.PaymentDAOImpl;
 import by.epam.webpayment.dao.impl.RolesDAOImpl;
 import by.epam.webpayment.dao.impl.UsersDAOImpl;
 
@@ -8,8 +9,10 @@ public class DAOFactory {
     private static DAOFactory ourInstance = new DAOFactory();
 
     private final UserDAO  userDAO= new UsersDAOImpl();
-    private final PaymentsDAO paymentsDAO = new PaymentsDAOImpl();
+    private final PaymentDAO paymentDAO = new PaymentDAOImpl();
     private final RolesDAO rolesDAO = new RolesDAOImpl();
+    private final CardsDAO cardsDAO = new CardsDAOImpl();
+
 
     private DAOFactory() {
     }
@@ -18,12 +21,16 @@ public class DAOFactory {
         return userDAO;
     }
 
-    public PaymentsDAO getPaymentsDAO() {
-        return paymentsDAO;
+    public PaymentDAO getPaymentDAO() {
+        return paymentDAO;
     }
 
     public RolesDAO getRolesDAO() {
         return rolesDAO;
+    }
+
+    public CardsDAO getCardsDAO() {
+        return cardsDAO;
     }
 
     public static DAOFactory getInstance() {
